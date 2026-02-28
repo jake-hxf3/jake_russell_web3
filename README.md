@@ -1,7 +1,7 @@
-# Project Name
+# Responsive Image Sizing
 ![insert alt text](images/example.jpg)
 
-This is a project about [insert topic].
+This is a project about the Responsive Image Assignment from the Web Development class.
 
 ## Installation 💻
 No installation required, simply download the zip file and extract.
