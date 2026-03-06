@@ -1,1 +1,128 @@
+/* 1. ---General Styles--- */
+body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
 
+h2, h3 {
+    font-family: "Kalnia", serif;
+    font-weight: 500;
+}
+
+.big-title {
+    font-family: "Kalnia", serif;
+    font-weight: 550;
+    color: #801A8E;
+    font-size: 2rem;
+}
+
+/* Defaults */
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+.social-icon {
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.social-icon a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 2. ---Header--- */
+#main-header {
+    padding: 40px 0 10px;
+}
+
+#main-header > div {
+    align-items: end;
+}
+
+#main-logo {
+    min-width: 150px;
+    margin: 0 20px;
+}
+
+#burger {
+    background-image: url(../images/burger-menu.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+}
+    #burger.clicked {
+        transform: rotate(90deg);
+    }
+
+#main-nav {
+    order: 4;
+}
+
+#burger-con {
+    display: none;
+    justify-content: space-around;
+}
+
+#burger-con.collapsible {
+    display: flex !important;
+}
+
+#func-btn {
+    justify-self: end;
+}
+
+
+.ico {
+    aspect-ratio: 1/1;
+    width: 2.25rem;
+    transition:  transform 0.25s linear;
+    cursor: pointer;
+}
+
+
+/* 2. ---Main Hero--- */
+#main-hero {
+    background-image: url(../images/hero-stars_w_908.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    height: 373px;
+}
+
+#main-hero .big-title {
+    filter: drop-shadow(#f1f1f1 0px 4px 3px);
+}
+
+
+/* 4. ---Main Footer--- */
+#main-footer {
+    background-color: #F7B3C0;
+    height: 480px;
+}
+
+/* 5. ---Responsive--- */
+@media screen and (min-width: 768px) {
+    #burger {
+        display: none;
+    }
+    #burger-con {
+        display: flex;
+    }
+    #main-nav {
+        order: 1;
+        grid-row: 1/-1;
+    }
+    #main-logo{
+        order: -1;
+    }
+}
