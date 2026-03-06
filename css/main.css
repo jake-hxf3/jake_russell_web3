@@ -3,7 +3,14 @@ body {
     font-family: "Montserrat", Helvetica, sans-serif;
 }
 
-h2, h3 {
+h2 {
+    font-size: 2rem;
+    font-family: "Kalnia", serif;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.3rem;
     font-family: "Kalnia", serif;
     font-weight: 500;
 }
@@ -103,6 +110,18 @@ nav ul li a {
     filter: drop-shadow(#f1f1f1 0px 4px 3px);
 }
 
+/* 3. ---Article--- */
+article section {
+    margin-bottom: 5rem;
+}
+
+article picture+section {
+    margin-top: 5rem;
+}
+
+#hugs picture {
+    text-align: center;
+}
 
 /* 4. ---Main Footer--- */
 #main-footer {
@@ -112,6 +131,11 @@ nav ul li a {
 
 /* 5. ---Responsive--- */
 @media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+
+
     #burger {
         display: none;
     }
