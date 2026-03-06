@@ -25,31 +25,22 @@ h3 {
 /* Defaults */
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 nav ul li a {
+    font-weight: 600;
     text-decoration: none;
 }
 
-.social-icon {
-    display: grid;
-    place-items: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.social-icon a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
 
 
 /* 2. ---Header--- */
 #main-header {
-    padding: 40px 0 10px;
+    padding: 40px;
 }
 
-#main-header > div {
+#main-header > div.grid-con {
     align-items: end;
 }
 
@@ -75,12 +66,32 @@ nav ul li a {
 
 #burger-con {
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 #burger-con.collapsible {
     display: flex !important;
 }
+#main-header.collapsible {
+    padding-bottom: 15px;
+}
+
+
+#burger-con li {
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+#burger-con li a{
+    width: 100%;
+    height: 100%;
+}
+
+#burger-con li:hover {
+    background-color: #ff98ad;
+}
+
 
 #func-btn {
     justify-self: end;
@@ -104,6 +115,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     height: 373px;
+    margin-bottom: 3rem;
 }
 
 #main-hero .big-title {
@@ -111,22 +123,83 @@ nav ul li a {
 }
 
 /* 3. ---Article--- */
+
 article section {
-    margin-bottom: 5rem;
+    margin-bottom: 5vh;
 }
 
-article picture+section {
-    margin-top: 5rem;
+article > picture {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+article p+img, article p+picture, #hugs picture {
+    margin-top: 3vh;
 }
 
 #hugs picture {
     text-align: center;
 }
 
+article p {
+    line-height: 30px;
+}
+
 /* 4. ---Main Footer--- */
 #main-footer {
+    align-content: start;
+    padding: 5vh 0;
+    margin-top: 15vh;
+    min-height: 500px;
     background-color: #F7B3C0;
-    height: 480px;
+    background-image: url(../images/waddles-face.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 50% 90%;
+}
+
+    #main-footer > .grid-con {
+        grid-row: 1/1;
+    }
+
+#footer-nav {
+    padding: 0;
+    line-height: 2rem;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.social-icon a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#footer-logo {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+#footer-logo img {
+    max-width: 200px;
+}
+#contact-us {
+    line-height: 2rem;
+    margin-bottom: 20px;
 }
 
 /* 5. ---Responsive--- */
@@ -135,6 +208,18 @@ article picture+section {
         font-size: 20px;
     }
 
+    #main-header {
+        padding: 15px;
+    }
+    #main-header > div.grid-con {
+        align-items: center;
+    }
+    #main-header.collapsible {
+        padding-bottom: 0;
+    }
+    #main-logo {
+        margin: 20px;
+    }
 
     #burger {
         display: none;
@@ -148,5 +233,55 @@ article picture+section {
     }
     #main-logo{
         order: -1;
+    }
+
+
+    #main-hero {
+        height: 325px;
+        background-image: url(../images/hero-stars_w_908.jpg);
+    }
+
+    .big-title {
+        font-size: 3rem;
+    }
+
+
+
+
+    article section {
+        margin-bottom: 7vh;
+    }
+
+    article h3 {
+        margin-bottom: 4vh;
+    }
+
+    article p {
+        line-height: 40px;
+    }
+
+
+    #main-footer {
+        padding-top: 7vh;
+    }
+    #footer-logo {
+        margin: 0 0 1.5rem;
+    }
+
+    div:has(#footer-logo) {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main-hero {
+        height: 435px;
+        background-image: url(../images/hero-stars_w_1200.jpg);
+        background-position: 30% 50%;
+    }
+
+    .big-title {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
     }
 }
