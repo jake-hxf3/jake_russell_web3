@@ -1,5 +1,5 @@
 # Responsive Image Sizing
-![let's hug](images/hero-stars_w_1200.jpg)
+![let's hug](images/article-img_autpge_c_scale,w_1804.jpg)
 
 This is a project about the Responsive Image Assignment from the Web Development class.
 
