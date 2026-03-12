@@ -26,6 +26,13 @@ h3 {
     font-size: 2rem;
 }
 
+.emph {
+    font-weight: 700;
+    font-style: normal;
+    color: #E83A95;
+    padding: 7px;
+}
+
 .stretch-text {
     letter-spacing: 5px;
 }
@@ -284,7 +291,7 @@ article p {
     h2 {
         font-size: 4rem;
     }
-    
+
     #main-hero {
         height: 435px;
         background-image: url(../images/hero-stars_fhwvms_c_scale,w_1920.jpg);
