@@ -116,7 +116,7 @@ nav ul li a {
 
 /* 2. ---Main Hero--- */
 #main-hero {
-    background-image: url(../images/hero-stars_w_908.jpg);
+    background-image: url(../images/hero-stars_fhwvms_c_scale,w_744.jpg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -134,6 +134,10 @@ nav ul li a {
 
 article section {
     margin-bottom: 5vh;
+}
+
+article picture, article img {
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.163);
 }
 
 article > picture {
@@ -185,7 +189,6 @@ article p {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background-color: black;
     display: grid;
     place-items: center;
     font-size: 1.2rem;
@@ -195,7 +198,8 @@ article p {
 .social-icon a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #801A8E;
+    text-shadow: 0px 1px 1px white;
 }
 
 #footer-logo {
@@ -246,7 +250,7 @@ article p {
 
     #main-hero {
         height: 325px;
-        background-image: url(../images/hero-stars_w_908.jpg);
+        background-image: url(../images/hero-stars_fhwvms_c_scale,w_1703.jpg);
     }
 
     .big-title {
@@ -280,8 +284,8 @@ article p {
 @media screen and (min-width: 1200px) {
     #main-hero {
         height: 435px;
-        background-image: url(../images/hero-stars_w_1200.jpg);
-        background-position: 30% 50%;
+        background-image: url(../images/hero-stars_fhwvms_c_scale,w_1920.jpg);
+        background-position: 30% 60%;
     }
 
     .big-title {
@@ -289,3 +293,4 @@ article p {
         line-height: 3.5rem;
     }
 }
+
