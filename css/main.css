@@ -136,7 +136,8 @@ article section {
     margin-bottom: 5vh;
 }
 
-article picture, article img {
+article picture source, article img {
+    border-radius: 25px;
     box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.163);
 }
 
@@ -258,8 +259,6 @@ article p {
     }
 
 
-
-
     article section {
         margin-bottom: 7vh;
     }
@@ -285,7 +284,7 @@ article p {
     #main-hero {
         height: 435px;
         background-image: url(../images/hero-stars_fhwvms_c_scale,w_1920.jpg);
-        background-position: 30% 60%;
+        background-position: 30% 63%;
     }
 
     .big-title {
