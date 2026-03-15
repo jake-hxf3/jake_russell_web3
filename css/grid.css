@@ -1,5 +1,5 @@
 /* ---General rules - scales images, videos to size of container--- */
-img, embed, object, video, picture {
+img, embed, object, video, picture, picture source {
    max-width: 100%;
  }
 
